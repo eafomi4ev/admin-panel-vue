@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <router-link to="/"><a class="navbar-brand" href="#">AdminPan</a></router-link>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <router-link to="/users">
+            <a class="nav-link" href="#">Список пользователей</a>
+            </router-link>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+      <router-view />
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import UserList from "@/pages/UserList.vue";
+  import "bootstrap/dist/css/bootstrap.css";
+  import router from "@/router/index.js";
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+  export default {
+    name: "app",
+    components: {
+      UserList
+    },
+    router,
+    data: function() {
+      return {};
+    }
+  };
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    margin-top: 60px;
+  }
 </style>
