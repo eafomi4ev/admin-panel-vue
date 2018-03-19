@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Список пользователей</h2>
-    <div v-if="users.lenght==0">Загрузка...</div>
+    <div v-if="users.lenght==0" class="alert alert-warning">Загрузка...</div>
     <users-table v-else :users="users"></users-table>
   </div>
 </template>

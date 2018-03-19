@@ -4,18 +4,15 @@
       <router-link to="/"><a class="navbar-brand" href="#">AdminPan</a></router-link>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <router-link to="/users">
-            <a class="nav-link" href="#">Список пользователей</a>
+            <router-link tag="li" to="/users">
+              <a class="nav-link" href="#">Список пользователей</a>
             </router-link>
-          </li>
         </ul>
-
       </div>
     </nav>
 
     <main role="main" class="container">
-      <router-view />
+      <router-view/>
     </main>
   </div>
 </template>
@@ -31,7 +28,7 @@
       UserList
     },
     router,
-    data: function() {
+    data: function () {
       return {};
     }
   };

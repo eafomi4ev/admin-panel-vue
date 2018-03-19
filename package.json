@@ -24,6 +24,9 @@
   "babel": {
     "presets": [
       "@vue/app"
+    ],
+    "plugins": [
+      "dynamic-import-node"
     ]
   },
   "eslintConfig": {
@@ -31,7 +34,11 @@
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended"
-    ]
+    ],
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    }
   },
   "postcss": {
     "plugins": {
