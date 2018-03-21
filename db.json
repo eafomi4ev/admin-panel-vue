@@ -1,35 +1,20 @@
 {
-  "users": [{
+  "users": [
+    {
       "id": 0,
       "isActive": false,
       "balance": "$1,244.25",
       "picture": "http://placehold.it/128x128",
       "age": 33,
       "accessLevel": "guest",
-      "firstName": "Shana",
+      "firstName": "Shana1",
       "lastName": "James",
-      "company": "FUELWORKS",
+      "company": "FUELWORKS2",
       "email": "shana.james@fuelworks.us",
       "phone": "+7 (991) 506-3183",
       "address": "969 Bergen Street, Beechmont, Michigan, 991",
       "about": "Officia voluptate quis commodo eiusmod qui et non ut ipsum nostrud sit duis magna. Laboris nulla consectetur ullamco aute. Consequat reprehenderit consectetur velit occaecat sunt. Sunt est duis tempor irure dolore officia.",
       "registered": "25.03.2015"
-    },
-    {
-      "id": 1,
-      "isActive": false,
-      "balance": "$1,208.15",
-      "picture": "http://placehold.it/128x128",
-      "age": 38,
-      "accessLevel": "user",
-      "firstName": "Clark",
-      "lastName": "Albert",
-      "company": "ZYTRAX",
-      "email": "clark.albert@zytrax.net",
-      "phone": "+7 (875) 565-3632",
-      "address": "635 Sackett Street, Sussex, Kansas, 9640",
-      "about": "Ut proident adipisicing amet qui exercitation ex. Voluptate officia minim tempor adipisicing cillum eu aliqua pariatur in in. Amet qui aute nisi exercitation ut cillum tempor officia dolore est veniam nisi. Deserunt deserunt et nostrud labore anim ipsum.",
-      "registered": "15.08.2014"
     },
     {
       "id": 2,
@@ -46,22 +31,6 @@
       "address": "584 Brightwater Avenue, Rodman, Indiana, 5982",
       "about": "Aliquip laborum exercitation enim tempor pariatur incididunt laboris reprehenderit in aliquip non. Eiusmod non elit qui eu sit commodo aliqua est anim. Commodo laboris mollit ad in laborum. Et in sunt ad et aliqua.",
       "registered": "28.12.2014"
-    },
-    {
-      "id": 3,
-      "isActive": false,
-      "balance": "$3,985.92",
-      "picture": "http://placehold.it/128x128",
-      "age": 23,
-      "accessLevel": "guest",
-      "firstName": "Catalina",
-      "lastName": "Roberts",
-      "company": "GLOBOIL",
-      "email": "catalina.roberts@globoil.info",
-      "phone": "+7 (838) 595-3148",
-      "address": "645 Denton Place, Moscow, Missouri, 5386",
-      "about": "Duis consequat ullamco sunt dolor est dolor nisi deserunt incididunt tempor. Elit laborum est commodo sunt et dolor non pariatur anim officia amet. Commodo pariatur cupidatat Lorem amet nostrud deserunt incididunt duis sit cillum occaecat. Lorem duis aliqua tempor sit voluptate incididunt. Esse id ea fugiat irure reprehenderit aliquip cupidatat occaecat sint est consectetur veniam proident. Irure ullamco excepteur commodo nostrud.",
-      "registered": "18.06.2017"
     },
     {
       "id": 4,

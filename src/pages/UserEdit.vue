@@ -8,7 +8,7 @@
 </template>
   
 <script>
-import axios from "axios";
+import axios from "@/axios.js";
 import UserForm from "@/components/UserForm.vue";
 
 export default {
@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     loadUser() {
-      axios.get(`http://localhost:3004/users/${this.id}`).then(response => {
+      axios.get(`/users/${this.id}`).then(response => {
         this.user = response.data;
       });
     }
