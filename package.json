@@ -24,13 +24,13 @@
   "babel": {
     "presets": [
       "@vue/app"
-    ],
-    "plugins": [
-      "dynamic-import-node"
     ]
   },
   "eslintConfig": {
     "root": true,
+    "env": {
+      "node": true
+    },
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended"

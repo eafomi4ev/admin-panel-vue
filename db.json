@@ -14,7 +14,8 @@
       "phone": "+7 (991) 506-3183",
       "address": "969 Bergen Street, Beechmont, Michigan, 991",
       "about": "Officia voluptate quis commodo eiusmod qui et non ut ipsum nostrud sit duis magna. Laboris nulla consectetur ullamco aute. Consequat reprehenderit consectetur velit occaecat sunt. Sunt est duis tempor irure dolore officia.",
-      "registered": "25.03.2015"
+      "registered": "25.03.2015",
+      "isActiove": true
     },
     {
       "id": 2,
@@ -25,7 +26,7 @@
       "accessLevel": "guest",
       "firstName": "Barlow",
       "lastName": "Velazquez",
-      "company": "ESSENSIA",
+      "company": "ESSENSIAkjhk",
       "email": "barlow.velazquez@essensia.co.uk",
       "phone": "+7 (988) 580-2382",
       "address": "584 Brightwater Avenue, Rodman, Indiana, 5982",

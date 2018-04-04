@@ -1,20 +1,21 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Index from "@/pages/Index.vue";
-import UserList from "@/pages/UserList.vue";
-import UserEdit from "@/pages/UserEdit.vue";
 
 Vue.use(VueRouter);
 
 const routes = [{
   path: "/",
-  component: Index,
+  name: 'index',
+  component: () => import("@/pages/Index.vue"),
 }, {
   path: '/users',
-  component: UserList,
+  name: 'userList',
+  component: () => import("@/pages/UserList.vue"),
 }, {
   path: '/users/edit/:id',
-  component: UserEdit,
+  name: 'userEdit',
+  component: () => import("@/pages/UserEdit.vue"),
+  props: true, //https://router.vuejs.org/ru/essentials/passing-props.html
 }];
 
 export default new VueRouter({
