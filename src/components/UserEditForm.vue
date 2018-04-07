@@ -1,36 +1,36 @@
 <template>
   <div>
-    <div class="form-group">
+    <div class="">
       <label for="firstName">Имя</label>
-      <input id="firstName" type="text" class="form-control" v-model="user.firstName"/>
+      <input id="firstName" type="text" class="" v-model="user.firstName"/>
     </div>
-    <div class="form-group">
+    <div class="">
       <label>Фамилия</label>
-      <input type="text" class="form-control" v-model="user.lastName"/>
+      <input type="text" class="" v-model="user.lastName"/>
     </div>
-    <div class="form-group">
+    <div class="">
       <label>Баланс</label>
-      <input type="text" class="form-control" v-model="user.balance"/>
+      <input type="text" class="" v-model="user.balance"/>
     </div>
-    <div class="form-group">
+    <div class="">
       <label>Телефон</label>
-      <input type="text" class="form-control" v-model="user.phone"/>
+      <input type="text" class="" v-model="user.phone"/>
     </div>
-    <div class="form-group">
+    <div class="">
       <label>Адрес</label>
-      <input type="text" class="form-control" v-model="user.address"/>
+      <input type="text" class="" v-model="user.address"/>
     </div>
-    <div class="form-group">
+    <div class="">
       <label>Статус:</label>
-      <select v-model="user.isActive" class="form-control">
+      <select v-model="user.isActive" class="">
         <option v-for="option in statusOptions" :key="option.value" v-bind:value="option.value">
           {{ option.text }}
         </option>
       </select>
     </div>
-    <div class="form-group">
+    <div class="">
       <label>Компания</label>
-      <input type="text" class="form-control" v-model="user.company"/>
+      <input type="text" class="" v-model="user.company"/>
     </div>
     <!--<div class="avatar">-->
     <!--<img v-attr="src: user.picture" alt="User's avatar">-->
@@ -42,7 +42,6 @@
 </template>
 
 <script>
-  import axios from "@/axios.js";
 
   export default {
     name: "UserTable",
@@ -73,11 +72,5 @@
 </script>
 
 <style>
-  .control-buttons > button {
-    margin-right: 10px;
-  }
 
-  .control-buttons:last-child {
-    margin-right: 0px;
-  }
 </style>

@@ -20,23 +20,25 @@
       UserEditForm: () => import("@/components/UserEditForm.vue"),
     },
 
-    props: {
-      id: {
-        type: String,
-        required: true,
-      },
-    },
-
     data: () => ({
-      user: null,
+      user: {
+        "isActive": null,
+        "balance": null,
+        "picture": null,
+        "age": null,
+        "accessLevel": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "email": null,
+        "phone": null,
+        "address": null,
+        "about": null,
+        "registered": null,
+      },
     }),
 
     methods: {
-      loadUser() {
-        axios.get(`/users/${this.id}`).then(response => {
-          this.user = response.data;
-        });
-      },
 
       redirectToList() {
         this.$router.push('/users');
@@ -45,7 +47,7 @@
       saveUserData() {
         if (confirm("Are you sure you want to save changes into the database?")) {
           axios
-            .patch(`/users/${this.user.id}`, this.user)
+            .post(`/users`, this.user)
             .then(() => this.redirectToList())
             .catch((error) => `Ошибка при сохранении: ${error}`);
         }
@@ -54,14 +56,10 @@
       deleteUser() {
         if (confirm("Are you sure you want to delete from database?")) {
           axios.delete(`/users/${this.user.id}`, this.user);
-        } else {
-          // Do nothing!
         }
       },
     },
-    mounted: function () {
-      this.loadUser();
-    },
+
   };
 </script>
 

@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", "Arial", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+    /*border: 1px solid #5a6268;*/
+}

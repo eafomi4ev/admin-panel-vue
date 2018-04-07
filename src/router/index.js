@@ -16,7 +16,12 @@ const routes = [{
   name: 'userEdit',
   component: () => import("@/pages/UserEdit.vue"),
   props: true, //https://router.vuejs.org/ru/essentials/passing-props.html
-}];
+}, {
+  path: '/users/create',
+  name: 'userCreate',
+  component: () => import("@/pages/UserCreate.vue"),
+}
+];
 
 export default new VueRouter({
   mode: 'history',
